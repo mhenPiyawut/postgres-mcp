@@ -37,7 +37,7 @@ jobs:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: _dockerfilePath_
           _targetLabelKey_: _targetLabel_
-          registryUrl: 
+          registryUrl: ${{ secrets.AZURE_ACR_URI}}
           registryUsername: ${{ secrets.GITHUBDEPLOYPOSTGESQL_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.GITHUBDEPLOYPOSTGESQL_REGISTRY_PASSWORD }}
           containerAppName: githubdeploypostgesql
