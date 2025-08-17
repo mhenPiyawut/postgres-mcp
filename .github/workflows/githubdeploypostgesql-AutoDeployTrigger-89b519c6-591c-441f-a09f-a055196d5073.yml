@@ -41,6 +41,6 @@ jobs:
           registryPassword: ${{ secrets.GITHUBDEPLOYPOSTGESQL_REGISTRY_PASSWORD }}
           containerAppName: githubdeploypostgesql
           resourceGroup: storage-test-mcp
-          imageToBuild: ${{ secrets.AZURE_ACR_URI}}:${{ github.sha }}
+          imageToBuild: mcpazurecontainer.azurecr.io/github:latest
 
 
